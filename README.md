@@ -23,6 +23,13 @@ function myCtrl($rootScope, $scope, $http, segmentio) {
 
 3) Call any method documented here: https://segment.io/libraries/analytics.js
 
+```
+segmentio.identify($scope.user.id, {
+  name: $scope.user.name,
+  email: $scope.user.email
+});
+```      
+
 ## How-to add it to your project?
 
 Via Twitter Bower (http://bower.io/) 
