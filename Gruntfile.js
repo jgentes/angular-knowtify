@@ -4,7 +4,7 @@ module.exports = function (grunt) {
         pkg: '<json:package.json>',
         watch: {
             karma: {
-                files: ['angular-segmentio.js', 'test/unit/*.js'],
+                files: ['angular-knowtify.js', 'test/unit/*.js'],
                 tasks: ['karma:unitBackground:run'] //NOTE the :run flag
             }
         },
@@ -25,8 +25,8 @@ module.exports = function (grunt) {
         uglify: {
             build: {
                 files: {
-                    'build/angular-segmentio.min.js': [
-                        'angular-segmentio.js'
+                    'build/angular-knowtify.min.js': [
+                        'angular-knowtify.js'
                     ]
                 }
             }

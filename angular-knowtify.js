@@ -1,5 +1,5 @@
-angular.module('segmentio', ['ng'])
-    .factory('segmentio', ['$rootScope', '$window', '$location', '$log',
+angular.module('knowtify', ['ng'])
+    .factory('knowtify', ['$rootScope', '$window', '$location', '$log',
         function($rootScope, $window, $location, $log) {
             var service = {};
 

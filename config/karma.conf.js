@@ -5,7 +5,7 @@ files = [
   JASMINE_ADAPTER,
   'test/lib/angular/angular.js',
   'test/lib/angular-mocks/angular-mocks.js',
-  'angular-segmentio.js',
+  'angular-knowtify.js',
   'test/unit/**/*.js'
 ];
 

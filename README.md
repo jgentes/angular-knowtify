@@ -1,27 +1,27 @@
-# Tracking Events and Pageviews with Segment.io (http://segment.io)
+# Angular support for Knowtify InBox (http://www.knowtify.io/)
 
-## How-to use it?
+## How do I use it?
 
 Follow these steps:
 
-1) Add the service to your angular js app module:
+1) Add the service to your Angular app module:
 
 ```
-var app = angular.module('myapp', ['segmentio']) {
+var app = angular.module('myapp', ['knowtify']) {
     ...
 });
 ```
 
 
-2) Now just have analytics to be injected in your controller.
+2) Inject the Knowtify service into your controller:
 
 ```
-function myCtrl($rootScope, $scope, $http, segmentio) {
+function myCtrl($rootScope, $scope, $http, knowtify) {
     ...
 };
 ```
 
-3) Call any method documented here: https://segment.io/libraries/analytics.js
+3) Call any method documented here: http://api.knowtify.io/docs/sending-alerts-to-inbox
 
 ```
 segmentio.identify($scope.user.id, {
@@ -33,11 +33,13 @@ segmentio.identify($scope.user.id, {
 ## How-to add it to your project?
 
 Via Twitter Bower (http://bower.io/) 
-Run ``bower install angular-segmentio`` in a terminal
+Run ``bower install angular-knowtify`` in a terminal
 
 ## How-to build / develop it?
 
 1) Install dependencies via npm: ``npm install``(in the project folder)
+
+2) Install dependencies via bower: ``bower install``(in the project folder)
 
 2) Run grunt: ``grunt`` or ``grunt uglify``
 
