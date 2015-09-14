@@ -79,4 +79,4 @@ knowtify.push(['event', 'testing', {
 3) The build result is in the dist directory
 
 
-!Props go to Dave Kuhn (https://github.com/kuhnza) for his angular-mixpanel repo on which this was based. 
+- Props go to Dave Kuhn (https://github.com/kuhnza) for his angular-mixpanel repo on which this was based. 
