@@ -7,5 +7,6 @@
     },
     "authors": [
       "James Gentes <james@startupcommunity.org>"
-    ]
+    ],
+    "ignore": []
 }
