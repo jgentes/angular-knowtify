@@ -1,6 +1,6 @@
 # Angular support for Knowtify InBox (http://www.knowtify.io/)
 
-## Note: This should be used for Knowtify InBox, not for Knowtify Emails, as Emails would expose your private API token to the client. For Node users, you should use https://www.npmjs.com/package/knowtify-node to support Knowtify Emails, which keeps your private token on your server.
+### Note: This should be used for Knowtify InBox, not for Knowtify Emails, as Emails would expose your private API token to the client. For Node users, you should use https://www.npmjs.com/package/knowtify-node to support Knowtify Emails, which keeps your private token on your server.
 
 ## How do I use it?
 
