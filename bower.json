@@ -1,6 +1,5 @@
 {
     "name": "angular-knowtify",
-    "version": "1.0.1",
     "main": "angular-knowtify.js",
     "dependencies": {
         "angular": "^1.2.0"
