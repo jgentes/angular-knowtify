@@ -5,7 +5,7 @@ module.exports = function (grunt) {
         uglify: {
             build: {
                 files: {
-                    'build/angular-knowtify.min.js': [
+                    'dist/angular-knowtify.min.js': [
                         'angular-knowtify.js'
                     ]
                 }

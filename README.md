@@ -10,6 +10,7 @@ Follow these steps:
 
 Run ``bower install angular-knowtify`` in a terminal
 
+
 2) Add the Knowtify script to your app HTML page. *Be sure to add your public API token here.*
 
 ```
@@ -23,7 +24,15 @@ Run ``bower install angular-knowtify`` in a terminal
 </script>
 ```
 
-3) Add the service to your Angular app module:
+
+3) Add the bower module to your app:
+
+```
+<script src="/bower_components/angular-knowtify/dist/angular-knowtify.min.js"></script>
+```
+
+
+4) Add the service to your Angular app module:
 
 ```
 var app = angular.module('myapp', ['knowtify']) {
@@ -32,7 +41,7 @@ var app = angular.module('myapp', ['knowtify']) {
 ```
 
 
-4) Inject the Knowtify service into your controller:
+5) Inject the Knowtify service into your controller:
 
 ```
 function myCtrl($rootScope, $scope, $http, knowtify) {
@@ -40,13 +49,15 @@ function myCtrl($rootScope, $scope, $http, knowtify) {
 };
 ```
 
-5) Add the CSS ID of the Inbox element as ``YOUR_BUTTON_ID`` (no # prefix) in your controller, along with the email and unique ID of the user, and push it to Knowtify. This initializes the button that your user will interact with. *Review http://api.knowtify.io/docs/get-started-with-inbox for more information.*
+
+6) Add the CSS ID of the Inbox element as ``YOUR_BUTTON_ID`` (no # prefix) in your controller, along with the email and unique ID of the user, and push it to Knowtify. This initializes the button that your user will interact with. *Review http://api.knowtify.io/docs/get-started-with-inbox for more information.*
 
 ```
 knowtify.push(['load_inbox', 'YOUR_BUTTON_ID', {email: "REQUIRED", id: "REQUIRED" }]);
 ```
 
-6) Call knowtify.push to send notifications using events, behavioral data, scheduled announcements, or manual updates:  
+
+7) Call knowtify.push to send notifications using events, behavioral data, scheduled announcements, or manual updates:  
 
 ```
 knowtify.push(['event', 'testing', {
@@ -54,6 +65,8 @@ knowtify.push(['event', 'testing', {
     email: "yourname@gmail.com"
 }])
 ```      
+
+### Problems? Submit an issue here: https://github.com/jgentes/angular-knowtify/issues
 
 ## How can I help?
 
@@ -63,5 +76,7 @@ knowtify.push(['event', 'testing', {
 
 2) Run grunt: ``grunt`` or ``grunt uglify``
 
-3) The build result is in the build directory
+3) The build result is in the dist directory
 
+
+!Props go to Dave Kuhn (https://github.com/kuhnza) for his angular-mixpanel repo on which this was based. 
