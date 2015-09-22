@@ -57,7 +57,7 @@ knowtify.push(['load_inbox', 'YOUR_BUTTON_ID', {email: "REQUIRED", id: "REQUIRED
 ```
 
 
-7) Call knowtify.push to send notifications using events, behavioral data, scheduled announcements, or manual updates:  
+7) Call knowtify.push or knowtify.inbox.push to send notifications using events, behavioral data, scheduled announcements, or manual updates:  
 
 ```
 knowtify.push(['event', 'testing', {
@@ -65,6 +65,20 @@ knowtify.push(['event', 'testing', {
     email: "yourname@gmail.com"
 }])
 ```      
+
+or
+
+```
+knowtify.inbox.push(['message', {
+    id: "123",
+    heading: "Message heading",
+    description: "Message description...",
+    image: "https://s3.amazonaws.com/knowtify_web/_img/inbox_profile.png",
+    url: "http://google.com",
+    created_at: timestamp
+}])
+```    
+
 
 ### Note that if you are creating users via Node using 'upsert', then the 'id' must be under "data", not next to 'email' like in the JS API. See https://knowtify.readme.io/discuss/56018ae68fcf8d230053c8d8
 
