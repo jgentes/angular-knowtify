@@ -55,11 +55,22 @@ angular.module('knowtify', [])
           }
       }
 
+      function callKnowtifyInboxPush() {
+          return function(params) {
+              waitTillAsyncApiLoaded(function() {
+                  window._knowtifyInbox.push(params);
+              });
+          }
+      }
+
       this.$get = function () {
           // Here we dynamically call the knowtify functions against the
           // window._knowtify object as we can't be sure when the window reference will be updated.
           return {
-              push: callKnowtifyPush()
+              push: callKnowtifyPush(),
+              inbox: {
+                  push: callKnowtifyInboxPush()
+              }
           };
       };
   });
