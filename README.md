@@ -1,6 +1,6 @@
 # Angular support for Knowtify InBox (http://www.knowtify.io/)
 
-### Note: This should be used for Knowtify InBox, not for Knowtify Emails, as Emails would expose your private API token to the client. For Node users, you should use https://www.npmjs.com/package/knowtify-node to support Knowtify Emails, which keeps your private token on your server.
+### Note: For Node users, you should also use https://www.npmjs.com/package/knowtify-node for Knowtify Emails support.
 
 ## How do I use it?
 
@@ -66,9 +66,11 @@ knowtify.push(['event', 'testing', {
 }])
 ```      
 
+### Note that if you are creating users via Node using 'upsert', then the 'id' must be under "data", not next to 'email' like in the JS API. See https://knowtify.readme.io/discuss/56018ae68fcf8d230053c8d8
+
 ### Problems? Submit an issue here: https://github.com/jgentes/angular-knowtify/issues
 
-## How can I help?
+## Want to help with this package?
 
 1) Install dependencies via npm: ``npm install``(in the project folder)
 
@@ -79,4 +81,4 @@ knowtify.push(['event', 'testing', {
 3) The build result is in the dist directory
 
 
-- Props go to Dave Kuhn (https://github.com/kuhnza) for his angular-mixpanel repo on which this was based. 
+#### Props go to Dave Kuhn (https://github.com/kuhnza) for his angular-mixpanel repo on which this was based. 
